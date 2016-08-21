@@ -23,4 +23,13 @@ exit_code=$?
 if [ $exit_code -ne 0 ]; then
   exit $exit_code
 fi
+
+if [ ! -e "FsAutoComplete/bin/release/FsAutoComplete.Suave.exe" ]
+then
+  git clone -b cors https://github.com/ionide/FsAutoComplete.git 
+  cd FsAutoComplete
+  build.sh LocalRelease
+  cd ..
+fi
+
 $MONO packages/FAKE/tools/FAKE.exe $@ --fsiargs build.fsx
