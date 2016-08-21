@@ -1,0 +1,12 @@
+FRAMEWORK: >= NET40
+NUGET
+  remote: https://www.nuget.org/api/v2
+    FAKE (4.37.2)
+GIT
+  remote: https://github.com/ionide/FsAutoComplete.git
+     (842a88fbfa71029959987f36d86f8785f6f490a8)
+      build: build.cmd LocalRelease
+      os: windows
+     (842a88fbfa71029959987f36d86f8785f6f490a8)
+      build: build.sh LocalRelease
+      os: mono
