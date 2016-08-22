@@ -9,7 +9,7 @@ open System.IO
 open FSharp.Data
 
 let localPort = 7101
-let release = "fs-auto-complete/bin/release"
+let release = "paket-files/github.com/tryfsharp/fs-auto-complete/bin/release"
 System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
 
 // --------------------------------------------------------------------------------------

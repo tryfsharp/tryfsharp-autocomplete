@@ -1,3 +1,6 @@
 framework: >= net40
 source https://nuget.org/api/v2
 nuget FAKE
+
+git https://github.com/tryfsharp/fs-auto-complete.git cors build: "build.cmd LocalRelease", OS: windows
+git https://github.com/tryfsharp/fs-auto-complete.git cors build: "build.sh LocalRelease", OS: mono
