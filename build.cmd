@@ -12,8 +12,8 @@ if errorlevel 1 (
   exit /b %errorlevel%
 )
 
-if not exist FsAutoComplete\bin\release\FsAutoComplete.Suave.exe (
-  git clone -b cors https://github.com/ionide/FsAutoComplete.git 
+if not exist fs-auto-complete\bin\release\FsAutoComplete.Suave.exe (
+  git clone -b cors https://github.com/tryfsharp/fs-auto-complete.git 
   cd FsAutoComplete
   call build.cmd LocalRelease
   cd ..

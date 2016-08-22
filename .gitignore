@@ -1,5 +1,6 @@
-FsAutoComplete
+fs-auto-complete
 .paket/paket.exe
 .fake
 packages
 paket-files
+.ionide.debug

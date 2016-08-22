@@ -24,10 +24,10 @@ if [ $exit_code -ne 0 ]; then
   exit $exit_code
 fi
 
-if [ ! -e "FsAutoComplete/bin/release/FsAutoComplete.Suave.exe" ]
+if [ ! -e "fs-auto-complete/bin/release/FsAutoComplete.Suave.exe" ]
 then
-  git clone -b cors https://github.com/ionide/FsAutoComplete.git 
-  cd FsAutoComplete
+  git clone -b cors https://github.com/tryfsharp/fs-auto-complete.git 
+  cd fs-auto-complete
   build.sh LocalRelease
   cd ..
 fi
